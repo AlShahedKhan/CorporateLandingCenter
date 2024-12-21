@@ -411,7 +411,7 @@
                 /* Make the card take full width */
                 height: 85vh;
                 /* Let the card's height adjust based on content */
-                background: rgba(0, 0, 0, 0.5);
+                background: rgba(0, 0, 0, 0.1);
                 /* Optional: Adds a semi-transparent overlay for readability */
             }
 
@@ -499,6 +499,29 @@
                 height: auto;
             }
 
+            .hero-text {
+                backdrop-filter: blur(12px);
+                background-color: rgba(0, 0, 0, 0.3);
+                color: whitesmoke;
+                text-align: center;
+                padding: 20px 15px;
+                border-radius: 20px;
+                margin-top: 300px;
+                height: 335px;
+                width: 100%;
+                /* Full width */
+                box-sizing: border-box;
+                transform: translateX(-205px);
+                /* Moves the element 205px to the left */
+            }
+
+            .hero-container .hero-text h2 {
+                color: #fff;
+                font-size: 2.3rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+
             .apply-now-btn {
                 background-color: #ffd700;
                 color: #1a1a1a;
@@ -569,7 +592,7 @@
                 /* Make the card take full width */
                 height: 85vh;
                 /* Let the card's height adjust based on content */
-                background: rgba(0, 0, 0, 0.5);
+                background: rgba(0, 0, 0, 0.1);
                 /* Optional: Adds a semi-transparent overlay for readability */
             }
 
@@ -657,6 +680,29 @@
                 height: auto;
             }
 
+            .hero-text {
+                backdrop-filter: blur(12px);
+                background-color: rgba(0, 0, 0, 0.3);
+                color: whitesmoke;
+                text-align: center;
+                padding: 20px 15px;
+                border-radius: 20px;
+                margin-top: 300px;
+                height: 335px;
+                width: 100%;
+                /* Full width */
+                box-sizing: border-box;
+                transform: translateX(-205px);
+                /* Moves the element 205px to the left */
+            }
+
+            .hero-container .hero-text h2 {
+                color: #fff;
+                font-size: 2.3rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+
             .apply-now-btn {
                 background-color: #ffd700;
                 color: #1a1a1a;
@@ -727,7 +773,7 @@
                 /* Make the card take full width */
                 height: 85vh;
                 /* Let the card's height adjust based on content */
-                background: rgba(0, 0, 0, 0.5);
+                background: rgba(0, 0, 0, 0.1);
                 /* Optional: Adds a semi-transparent overlay for readability */
             }
 
@@ -814,6 +860,29 @@
                 height: auto;
             }
 
+            .hero-text {
+                backdrop-filter: blur(12px);
+                background-color: rgba(0, 0, 0, 0.3);
+                color: whitesmoke;
+                text-align: center;
+                padding: 20px 15px;
+                border-radius: 20px;
+                margin-top: 300px;
+                height: 335px;
+                width: 100%;
+                /* Full width */
+                box-sizing: border-box;
+                transform: translateX(-205px);
+                /* Moves the element 205px to the left */
+            }
+
+            .hero-container .hero-text h2 {
+                color: #fff;
+                font-size: 2.3rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+
             .apply-now-btn {
                 background-color: #ffd700;
                 color: #1a1a1a;
@@ -884,7 +953,7 @@
                 /* Make the card take full width */
                 height: 85vh;
                 /* Let the card's height adjust based on content */
-                background: rgba(0, 0, 0, 0.5);
+                background: rgba(0, 0, 0, 0.1);
                 /* Optional: Adds a semi-transparent overlay for readability */
             }
 
@@ -971,6 +1040,29 @@
                 height: auto;
             }
 
+            .hero-text {
+                backdrop-filter: blur(12px);
+                background-color: rgba(0, 0, 0, 0.3);
+                color: whitesmoke;
+                text-align: center;
+                padding: 20px 15px;
+                border-radius: 20px;
+                margin-top: 300px;
+                height: 335px;
+                width: 100%;
+                /* Full width */
+                box-sizing: border-box;
+                transform: translateX(-205px);
+                /* Moves the element 205px to the left */
+            }
+
+            .hero-container .hero-text h2 {
+                color: #fff;
+                font-size: 2.3rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+
             .apply-now-btn {
                 background-color: #ffd700;
                 color: #1a1a1a;
@@ -1039,7 +1131,7 @@
             .first-card {
                 width: 100%;
                 height: 69vh;
-                background: rgba(0, 0, 0, 0.5);
+                background: rgba(0, 0, 0, 0.1);
             }
 
             .carousel-item img {
@@ -1101,6 +1193,21 @@
 
         /* Large (lg) - min-width: 992px and max-width: 1199px (laptops and desktops) */
         @media (min-width: 992px) and (max-width: 1199px) {
+            .hero-text {
+                backdrop-filter: blur(12px);
+                background-color: rgba(0, 0, 0, 0.3);
+                color: whitesmoke;
+                text-align: center;
+                padding: 20px 15px;
+                border-radius: 20px;
+                margin-top: 300px;
+                height: 335px;
+                width: 100%;
+                /* Full width */
+                box-sizing: border-box;
+                transform: translateX(-205px);
+                /* Moves the element 205px to the left */
+            }
 
 
             .hero-container .hero-text {
