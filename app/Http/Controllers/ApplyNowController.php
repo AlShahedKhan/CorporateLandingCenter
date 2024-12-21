@@ -12,13 +12,53 @@ use Illuminate\Support\Facades\Storage;
 
 class ApplyNowController extends Controller
 {
-    public function index()
+    // public function index()
+    // {
+    //     $applyNows = ApplyNow::all();
+    //     return view('apply', [
+    //         'applyNows' => $applyNows
+    //     ]);
+    // }
+
+    public function index(Request $request)
     {
         $applyNows = ApplyNow::all();
+
+        // Check if the request is for export
+        if ($request->has('export')) {
+            $exportData = $applyNows->map(function ($apply) {
+                return [
+                    'Email' => $apply->email,
+                    'Business Phone' => $apply->business_phone,
+                    'Cell Phone' => $apply->cell_phone,
+                    'Partner Phone' => $apply->partner_phone,
+                    'Landlord Phone' => $apply->landlord_phone,
+                ];
+            });
+
+            // Convert to CSV
+            $csvFileName = 'apply_now_contacts_' . now()->format('Y-m-d_H-i-s') . '.csv';
+            $handle = fopen('php://output', 'w');
+            ob_start();
+            fputcsv($handle, array_keys($exportData->first())); // Add header row
+            foreach ($exportData as $row) {
+                fputcsv($handle, $row);
+            }
+            fclose($handle);
+
+            $csvOutput = ob_get_clean();
+
+            return response($csvOutput, 200, [
+                'Content-Type' => 'text/csv',
+                'Content-Disposition' => "attachment; filename={$csvFileName}",
+            ]);
+        }
+
         return view('apply', [
             'applyNows' => $applyNows
         ]);
     }
+
 
     public function create()
     {
@@ -179,7 +219,7 @@ class ApplyNowController extends Controller
             'uploaded_bank_statements' => !empty($filePaths) ? json_encode($filePaths) : null,
         ]);
 
-        Mail::to('recipient@example.com')->send(new BusinessApplicationMail($applyNow));
+        Mail::to('alshahed.cse@gmail.com')->send(new BusinessApplicationMail($applyNow));
 
 
         return back()->with('success', 'Your application has been sent!');
