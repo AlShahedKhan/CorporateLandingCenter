@@ -50,7 +50,8 @@
             <a class="navbar-brand" href="{{ url('/') }}">
                 <div class="brand-container">
                     {{-- <img src="{{ asset('storage/logo/logo.jpg') }}" alt="Brand Logo"> --}}
-                    <img src="{{ asset('storage/logo/logo-removebg-preview.png') }}" alt="Brand Logo">
+                    {{-- <img src="{{ asset('storage/logo/logo-removebg-preview.png') }}" alt="Brand Logo"> --}}
+                    <img src="{{ asset('storage/logo/logo.png') }}" alt="Brand Logo">
                     <!-- Logo Path from Laravel Storage -->
                 </div>
             </a>

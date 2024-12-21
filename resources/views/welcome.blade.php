@@ -16,6 +16,13 @@
             background-color: white;
         }
 
+        h3 {
+            color: white;
+            font-weight: bold;
+        }
+
+
+
         .apply-now-btn-2 {
             background-color: #5e72e4;
             color: white;
@@ -79,7 +86,7 @@
             /* Make the card take full width */
             height: 50vh;
             /* Let the card's height adjust based on content */
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.1);
             /* Optional: Adds a semi-transparent overlay for readability */
         }
 
@@ -209,13 +216,15 @@
             z-index: 60;
         }
 
+
+
         .hero-overlay {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.1);
             /* Adds a slight dark overlay */
             z-index: 1;
         }
@@ -236,6 +245,20 @@
             font-size: 3rem;
             font-weight: bold;
             margin-bottom: 1rem;
+        }
+
+        .hero-text {
+            /* background-color: black */
+            backdrop-filter: blur(12px);
+            background-color: rgba(0, 0, 0, 0.3);
+            flood-opacity: 0.5;
+            color: whitesmoke;
+            text-align: center;
+            padding: 20px 15px;
+            border-radius: 20px;
+            left: 200px;
+            /* Adjust this value to shift it more */
+
         }
 
         .hero-container .hero-text p {
@@ -291,6 +314,32 @@
                 max-width: 75%;
                 height: auto;
             }
+
+            .hero-text {
+                backdrop-filter: blur(12px);
+                background-color: rgba(0, 0, 0, 0.3);
+                color: whitesmoke;
+                text-align: center;
+                padding: 20px 15px;
+                border-radius: 20px;
+                margin-top: 300px;
+                height: 335px;
+                width: 100%;
+                /* Full width */
+                box-sizing: border-box;
+                transform: translateX(-205px);
+                /* Moves the element 205px to the left */
+            }
+
+            .hero-container .hero-text h2 {
+                color: #fff;
+                font-size: 2.3rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+
+
+
 
             .apply-now-btn {
                 background-color: #ffd700;
@@ -1099,7 +1148,7 @@
                 <div class="brand-container">
                     {{-- @dd(asset('../../storage/app/public/logo/logo.png')) --}}
                     {{-- <img src="{{ asset('storage/logo/logo.jpg') }}" alt="Brand Logo"> --}}
-                    <img src="{{ url('storage/logo/logo2.png') }}" alt="Brand Logo">
+                    <img src="{{ url('storage/logo/logo.png') }}" class="nav-img" alt="Brand Logo">
 
                     <!-- Logo Path from Laravel Storage -->
                 </div>
@@ -1108,7 +1157,6 @@
             <!-- Hamburger Menu for Mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
             </button>
 
             <!-- Navbar Links -->
@@ -1164,9 +1212,10 @@
         <div class="hero-container container">
             <div class="hero-overlay"></div>
             <div class="hero-text">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod impedit quidem rerum! Explicabo
-                    nostrum suscipit perferendis? Fugit eum </p>
+                <h2>Need Funding Fast?</h2>
+                <h3>Get $5,000 to 5,000,000</h3>
+                <h3>Your time is money</h3>
+                <h3>GET HASSLE FREE SAME DAY FUNDING</h3>
                 <a href="/apply-now/create" class="btn btn-primary">GET FUNDED NOW!</a>
             </div>
         </div>
