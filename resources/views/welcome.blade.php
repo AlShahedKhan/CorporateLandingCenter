@@ -81,14 +81,15 @@
             /* Add padding to the section to give it some space */
         }
 
-        .card {
+        .first-card {
             width: 100%;
             /* Make the card take full width */
             height: 50vh;
             /* Let the card's height adjust based on content */
-            background: rgba(0, 0, 0, 0.1);
+            background: rgba(0, 0, 0, 0.4);
             /* Optional: Adds a semi-transparent overlay for readability */
         }
+
 
         .need-card {
             width: 100%;
@@ -166,7 +167,8 @@
 
         /* Custom CSS */
         .last-section {
-            background-color: rgb(16, 48, 16);
+            background-color: rgb(65, 105, 225);
+
             /* Set the background image */
             background-size: cover;
             /* Ensure the image covers the full area */
@@ -185,7 +187,24 @@
             /* Let the card's height adjust based on content */
             background: rgba(0, 0, 0, 0.5);
             /* Optional: Adds a semi-transparent overlay for readability */
+            align-items: center;
         }
+
+        /* .footer-section{
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: center !important;
+        } */
+
+        /* .last-card {
+            width: 100%;
+            height: 35vh;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: center !important;
+            align-items: center !important;
+        } */
 
         .border-top {
             border-top: 2px solid #ccc;
@@ -288,9 +307,85 @@
             /* Center the image horizontally */
         }
 
+        .before-footer {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .col-md-3-div {
+            flex: 0 0 25%;
+            /* Take up 25% of the container width */
+            max-width: 25%;
+            /* Ensure the column doesn't exceed 25% width */
+            box-sizing: border-box;
+            /* Include padding and border in the width calculation */
+            padding: 15px;
+            /* Match Bootstrap's gutter spacing */
+        }
+
         /* Extra Small (xs) - max-width: 575.98px (portrait mobile) */
         /* Extra Small (xs) - max-width: 575.98px (portrait mobile) */
         @media (min-width: 320px) and (max-width: 374px) {
+
+
+            .hero {
+                background-image: url(http://corporatelandingcenter.test/storage/logo/happy-businessman-calling.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 65vh;
+                background-color: #000;
+                background-blend-mode: screen;
+                position: relative;
+            }
+
+            .hero-text {
+                backdrop-filter: blur(12px);
+                background-color: rgba(0, 0, 0, 0.1);
+                color: whitesmoke;
+                text-align: center;
+                padding: 20px 15px;
+                border-radius: 20px;
+                margin-top: 285px;
+                height: 215px;
+                width: 100%;
+                box-sizing: border-box;
+                transform: translateX(-205px);
+            }
+
+            .hero-container .hero-text h2 {
+                color: #fff;
+                font-size: 1.6rem;
+                font-weight: bold;
+            }
+
+            .hero-container .hero-text h3 {
+                color: #fff;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+
+            .hero-container .hero-text h3 {
+                color: #fff;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+
+            .btn-primary {
+                color: #fff;
+                background-color: #0d6efd;
+                border-color: #0d6efd;
+                padding: 0.2rem 0.4rem;
+                /* Very small padding */
+                font-size: 0.75rem;
+                /* Smaller font size (12px) */
+                border-radius: 0.15rem;
+                /* Optional: Sharper edges for a smaller button */
+            }
+
+
+
             .apply-now-btn-2 {
                 background-color: #5e72e4;
                 color: white;
@@ -310,39 +405,30 @@
                 height: 64px;
             }
 
+
+            .we-understand {
+                font-size: 1.2rem;
+            }
+
+            .we-understand-p {
+                margin-top: -16px;
+                font-size: 0.9rem;
+            }
+
+            .need-card .card-title {
+                font-size: 0.9rem;
+                margin-bottom: -2px;
+            }
+
             .img-fluid {
                 max-width: 75%;
                 height: auto;
             }
 
-            .hero-text {
-                backdrop-filter: blur(12px);
-                background-color: rgba(0, 0, 0, 0.3);
-                color: whitesmoke;
-                text-align: center;
-                padding: 20px 15px;
-                border-radius: 20px;
-                margin-top: 300px;
-                height: 335px;
-                width: 100%;
-                /* Full width */
-                box-sizing: border-box;
-                transform: translateX(-205px);
-                /* Moves the element 205px to the left */
-            }
-
-            .hero-container .hero-text h2 {
-                color: #fff;
-                font-size: 2.3rem;
-                font-weight: bold;
-                margin-bottom: 1rem;
-            }
-
-
 
 
             .apply-now-btn {
-                background-color: #ffd700;
+                background-color: #ffa500;
                 color: #1a1a1a;
                 padding: 6px 2px;
                 border-radius: 15px;
@@ -369,8 +455,7 @@
             }
 
             .card .img-small {
-                width: 60%;
-                /* Ensures the image takes up the full width of its container */
+                width: 40%;
                 height: auto;
             }
 
@@ -392,7 +477,7 @@
 
             .need-card {
                 width: 100%;
-                height: 115vh;
+                height: 79vh;
                 background: rgba(241, 238, 238, 0.5);
                 padding-top: 30px;
             }
@@ -411,7 +496,7 @@
                 /* Make the card take full width */
                 height: 85vh;
                 /* Let the card's height adjust based on content */
-                background: rgba(0, 0, 0, 0.1);
+                background: rgba(0, 0, 0, 0.4);
                 /* Optional: Adds a semi-transparent overlay for readability */
             }
 
@@ -423,8 +508,9 @@
 
             .funding-specialist {
                 padding: 20px;
-                height: 25ch;
-                /* flex-direction: column; */
+                height: 12ch;
+                display: flex;
+                flex-direction: column;
             }
 
             .funding-specialist h1 {
@@ -440,14 +526,15 @@
                 /* Allow text to wrap to the next line */
             }
 
+            .funding-specialist .phone {
+                margin-right: 75px;
+            }
+
             .last-section {
-
-                height: 125ch;
+                height: 108ch;
             }
 
-            .last-card {
-                height: 122vh;
-            }
+
 
             .card-body {
                 display: flex;
@@ -466,11 +553,58 @@
 
             .hero-container .hero-text {
                 width: 95%;
+
             }
 
             .carousel-item .carousel-content {
                 height: 35ch;
             }
+
+
+
+            .card-title-white {
+                font-size: 1rem;
+                /* Adjust font size for readability */
+                line-height: 1.5;
+                /* Improve line height for better readability */
+                color: #ffffff;
+                /* Keep text white */
+            }
+
+            .card-body h3 {
+                font-size: 1.2rem;
+                /* Highlight headings with a larger size */
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+            }
+
+            .card-body h5 {
+                font-size: 0.9rem;
+                /* Slightly smaller for subheadings */
+                margin: 0.2rem 0;
+                /* Add spacing between subheading lines */
+            }
+
+            .before-footer {
+                flex-direction: column;
+            }
+
+            .col-md-3-div {
+                flex: 0 0 50%;
+                /* Take up 50% of the container width */
+                max-width: 100%;
+                /* Ensure the column doesn't exceed 50% width */
+                box-sizing: border-box;
+                /* Include padding and border in the width calculation */
+                padding: 5px;
+                /* Match Bootstrap's gutter spacing */
+                text-align: center
+            }
+
+            .last-card {
+                height: 106vh;
+            }
+
 
         }
 
@@ -501,7 +635,7 @@
 
             .hero-text {
                 backdrop-filter: blur(12px);
-                background-color: rgba(0, 0, 0, 0.3);
+                background-color: rgba(0, 0, 0, 0.1);
                 color: whitesmoke;
                 text-align: center;
                 padding: 20px 15px;
@@ -523,7 +657,7 @@
             }
 
             .apply-now-btn {
-                background-color: #ffd700;
+                background-color: #ffa500;
                 color: #1a1a1a;
                 padding: 6px 2px;
                 border-radius: 15px;
@@ -592,7 +726,7 @@
                 /* Make the card take full width */
                 height: 85vh;
                 /* Let the card's height adjust based on content */
-                background: rgba(0, 0, 0, 0.1);
+                background: rgba(0, 0, 0, 0.4);
                 /* Optional: Adds a semi-transparent overlay for readability */
             }
 
@@ -622,9 +756,7 @@
             }
 
             .last-section {
-
                 height: 96ch;
-                ;
             }
 
             .last-card {
@@ -682,7 +814,7 @@
 
             .hero-text {
                 backdrop-filter: blur(12px);
-                background-color: rgba(0, 0, 0, 0.3);
+                background-color: rgba(0, 0, 0, 0.1);
                 color: whitesmoke;
                 text-align: center;
                 padding: 20px 15px;
@@ -773,7 +905,7 @@
                 /* Make the card take full width */
                 height: 85vh;
                 /* Let the card's height adjust based on content */
-                background: rgba(0, 0, 0, 0.1);
+                background: rgba(0, 0, 0, 0.4);
                 /* Optional: Adds a semi-transparent overlay for readability */
             }
 
@@ -862,7 +994,7 @@
 
             .hero-text {
                 backdrop-filter: blur(12px);
-                background-color: rgba(0, 0, 0, 0.3);
+                background-color: rgba(0, 0, 0, 0.1);
                 color: whitesmoke;
                 text-align: center;
                 padding: 20px 15px;
@@ -953,7 +1085,7 @@
                 /* Make the card take full width */
                 height: 85vh;
                 /* Let the card's height adjust based on content */
-                background: rgba(0, 0, 0, 0.1);
+                background: rgba(0, 0, 0, 0.4);
                 /* Optional: Adds a semi-transparent overlay for readability */
             }
 
@@ -1042,7 +1174,7 @@
 
             .hero-text {
                 backdrop-filter: blur(12px);
-                background-color: rgba(0, 0, 0, 0.3);
+                background-color: rgba(0, 0, 0, 0.1);
                 color: whitesmoke;
                 text-align: center;
                 padding: 20px 15px;
@@ -1064,7 +1196,7 @@
             }
 
             .apply-now-btn {
-                background-color: #ffd700;
+                background-color: #ffa500;
                 color: #1a1a1a;
                 padding: 6px 2px;
                 border-radius: 15px;
@@ -1131,7 +1263,7 @@
             .first-card {
                 width: 100%;
                 height: 69vh;
-                background: rgba(0, 0, 0, 0.1);
+                background: rgba(0, 0, 0, 0.4);
             }
 
             .carousel-item img {
@@ -1195,7 +1327,7 @@
         @media (min-width: 992px) and (max-width: 1199px) {
             .hero-text {
                 backdrop-filter: blur(12px);
-                background-color: rgba(0, 0, 0, 0.3);
+                background-color: rgba(0, 0, 0, 0.1);
                 color: whitesmoke;
                 text-align: center;
                 padding: 20px 15px;
@@ -1342,8 +1474,8 @@
         </div>
 
         <!-- Heading and text -->
-        <h2 class="text-center mb-4 text-primary">We Understand Your Needs</h2>
-        <p class="text-center">Here are just a few of the industries we like</p>
+        <h2 class="text-center mb-4 text-primary we-understand">We Understand Your Needs</h2>
+        <p class="text-center we-understand-p">Here are just a few of the industries we like</p>
     </div>
 
 
@@ -1566,7 +1698,7 @@
     </section>
     <section class="funding-specialist">
         <h1>Call to speak with a Funding Specialist</h1>
-        <h1>510 340-9000</h1>
+        <h1 class="phone">510 340-9000</h1>
     </section>
 
     <section class="mt-5 last-section">
@@ -1576,19 +1708,15 @@
                     <!-- Section Heading -->
 
                     <!-- Row for the first set of three cards -->
-                    <div class="row justify-content-center">
-                        <div class="col-md-3">
-                            {{-- <img class="card-img-top img-small" src="{{ asset('storage/logo/logo.png') }}"
-                                alt="Card image cap"> --}}
-                            {{-- <img class="card-img-top img-small" src="{{ asset('storage/logo/logo.jpg') }}"
-                                alt="Brand Logo"> --}}
+                    <div class="before-footer">
+                        <div class=" col-md-3-div">
                             <div class="card-body text-left">
                                 <p class="card-title-white">Please remember though that how far you go is up to you.
                                     There is no substitute for your own work and effort in succeeding in this business.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3-div">
                             <div class="card-body text-left">
                                 <h3 class="card-title-white">Services</h3>
                                 <h5 class="card-title-white">Personal Funding</h5>
@@ -1597,7 +1725,7 @@
                                 <h5 class="card-title-white">Term Loans</h5>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3-div">
                             <div class="card-body text-left">
                                 <h3 class="card-title-white">Corporate Landing Center</h3>
                                 <h5 class="card-title-white">510 340-9000</h5>
@@ -1606,7 +1734,7 @@
                                 <h5 class="card-title-white">www.corpLanding.net</h5>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3-div">
                             <div class="card-body text-left">
                                 <h3 class="card-title-white">Open Hours</h3>
                                 <h5 class="card-title-white">Monday - Friday: 09:00 am - 8:00 pm</h5>
@@ -1627,9 +1755,7 @@
                                         <h5 class="card-title-white title-footer">Privacy Policy</h5>
                                     </a>
                                     <h5 class="card-title-white title-footer">Community</h5>
-                                    <h5 class="card-title-white title-footer">Copyright © 2024 All rights reserved |
-                                        Developed By
-                                        SM_Technology</h5>
+                                    <h5 class="card-title-white title-footer">Copyright © 2024 All rights reserved</h5>
                                 </div>
                             </div>
                         </div>
