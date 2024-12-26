@@ -21,6 +21,11 @@
             font-weight: bold;
         }
 
+        a {
+            text-decoration: none;
+            /* Removes the underline */
+        }
+
 
 
         .apply-now-btn-2 {
@@ -183,7 +188,7 @@
         .last-card {
             width: 100%;
             /* Make the card take full width */
-            height: 35vh;
+            height: 36vh;
             /* Let the card's height adjust based on content */
             background: rgba(0, 0, 0, 0.5);
             /* Optional: Adds a semi-transparent overlay for readability */
@@ -609,6 +614,54 @@
         }
 
         @media (min-width: 374px) and (max-width: 480px) {
+            .hero {
+                background-image: url(http://corporatelandingcenter.test/storage/logo/happy-businessman-calling.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 65vh;
+                background-color: #000;
+                background-blend-mode: screen;
+                position: relative;
+            }
+
+            .hero-text {
+                backdrop-filter: blur(12px);
+                background-color: rgba(0, 0, 0, 0.1);
+                color: whitesmoke;
+                text-align: center;
+                padding: 20px 15px;
+                border-radius: 20px;
+                margin-top: 285px;
+                height: 215px;
+                width: 100%;
+                box-sizing: border-box;
+                transform: translateX(-205px);
+            }
+            /* used */
+            .hero-container .hero-text h2 {
+                font-size: 1.9rem;
+            }
+            /* used */
+            .hero-container .hero-text h3 {
+                font-size: 1.1rem;
+            }
+
+            .btn-primary {
+                color: #fff;
+                background-color: #0d6efd;
+                border-color: #0d6efd;
+                padding: 0.2rem 0.4rem;
+                /* Very small padding */
+                font-size: 0.75rem;
+                /* Smaller font size (12px) */
+                border-radius: 0.15rem;
+                /* Optional: Sharper edges for a smaller button */
+            }
+
+
+
             .apply-now-btn-2 {
                 background-color: #5e72e4;
                 color: white;
@@ -624,8 +677,19 @@
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
-                width: 85px;
-                height: 85px;
+                width: 65px;
+                height: 64px;
+            }
+
+
+            .we-understand-p {
+                margin-top: -16px;
+                font-size: 0.8rem;
+            }
+
+            .need-card .card-title {
+                font-size: 0.9rem;
+                margin-bottom: -2px;
             }
 
             .img-fluid {
@@ -633,28 +697,7 @@
                 height: auto;
             }
 
-            .hero-text {
-                backdrop-filter: blur(12px);
-                background-color: rgba(0, 0, 0, 0.1);
-                color: whitesmoke;
-                text-align: center;
-                padding: 20px 15px;
-                border-radius: 20px;
-                margin-top: 300px;
-                height: 335px;
-                width: 100%;
-                /* Full width */
-                box-sizing: border-box;
-                transform: translateX(-205px);
-                /* Moves the element 205px to the left */
-            }
 
-            .hero-container .hero-text h2 {
-                color: #fff;
-                font-size: 2.3rem;
-                font-weight: bold;
-                margin-bottom: 1rem;
-            }
 
             .apply-now-btn {
                 background-color: #ffa500;
@@ -683,10 +726,9 @@
                 /* Adds spacing between the rows */
             }
 
+            /* used */
             .card .img-small {
-                width: 60%;
-                /* Ensures the image takes up the full width of its container */
-                height: auto;
+                width: 41%;
             }
 
             /* For images, reduce the width and adjust max-width */
@@ -704,42 +746,30 @@
                 margin-bottom: 10px;
                 /* Add some space between rows */
             }
-
+            /* used */
             .need-card {
-                width: 100%;
-                height: 123vh;
-                background: rgba(241, 238, 238, 0.5);
-                padding-top: 30px;
+                height: 84vh;
             }
-
+            /* used */
             .custom-section {
-                background-image: url(http://corporatelandingcenter.test/storage/logo/handshake.jpg);
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                padding: 30px 0;
-                height: 88ch;
+                height: 74ch;
             }
-
+            /* used */
             .first-card {
-                width: 100%;
-                /* Make the card take full width */
-                height: 85vh;
-                /* Let the card's height adjust based on content */
-                background: rgba(0, 0, 0, 0.4);
-                /* Optional: Adds a semi-transparent overlay for readability */
+                height: 70vh;
             }
 
             .carousel-item img {
-                margin-top: 20%;
-                width: 25%;
+                margin-top: 14%;
+                width: 23%;
                 margin-bottom: 54%;
             }
 
             .funding-specialist {
                 padding: 20px;
-                height: 25ch;
-                /* flex-direction: column; */
+                height: 12ch;
+                display: flex;
+                flex-direction: column;
             }
 
             .funding-specialist h1 {
@@ -755,13 +785,15 @@
                 /* Allow text to wrap to the next line */
             }
 
-            .last-section {
-                height: 96ch;
+            .funding-specialist .phone {
+                margin-right: 75px;
             }
 
-            .last-card {
-                height: 94vh;
+            .last-section {
+                height: 108ch;
             }
+
+
 
             .card-body {
                 display: flex;
@@ -780,11 +812,58 @@
 
             .hero-container .hero-text {
                 width: 95%;
+                height: 221px;
+            }
+            /* used */
+            .carousel-item .carousel-content {
+                height: 30ch;
             }
 
-            .carousel-item .carousel-content {
-                height: 35ch;
+
+
+            .card-title-white {
+                font-size: 1rem;
+                /* Adjust font size for readability */
+                line-height: 1.5;
+                /* Improve line height for better readability */
+                color: #ffffff;
+                /* Keep text white */
             }
+
+            .card-body h3 {
+                font-size: 1.2rem;
+                /* Highlight headings with a larger size */
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+            }
+
+            .card-body h5 {
+                font-size: 0.9rem;
+                /* Slightly smaller for subheadings */
+                margin: 0.2rem 0;
+                /* Add spacing between subheading lines */
+            }
+
+            .before-footer {
+                flex-direction: column;
+            }
+
+            .col-md-3-div {
+                flex: 0 0 50%;
+                /* Take up 50% of the container width */
+                max-width: 100%;
+                /* Ensure the column doesn't exceed 50% width */
+                box-sizing: border-box;
+                /* Include padding and border in the width calculation */
+                padding: 5px;
+                /* Match Bootstrap's gutter spacing */
+                text-align: center
+            }
+
+            .last-card {
+                height: 106vh;
+            }
+
         }
 
         @media (min-width: 481px) and (max-width: 575px) {
@@ -1651,29 +1730,25 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Second Slide -->
-                    <div class="carousel-item" data-bs-interval="10000">
+                    <div class="carousel-item " data-bs-interval="10000">
                         <div class="carousel-content">
                             <!-- Image in the first line -->
                             <img src="{{ asset('storage/logo/coma.png') }}" class="d-block w-10" alt="...">
 
                             <!-- Caption/Text in the second line -->
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption d-md-block">
                                 <h5>Second slide label</h5>
                                 <p>Some representative placeholder content for the second slide.</p>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Third Slide -->
-                    <div class="carousel-item" data-bs-interval="10000">
+                    <div class="carousel-item " data-bs-interval="10000">
                         <div class="carousel-content">
                             <!-- Image in the first line -->
                             <img src="{{ asset('storage/logo/coma.png') }}" class="d-block w-10" alt="...">
 
                             <!-- Caption/Text in the second line -->
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption d-md-block">
                                 <h5>Third slide label</h5>
                                 <p>Some representative placeholder content for the third slide.</p>
                             </div>
