@@ -333,6 +333,8 @@
         @media (min-width: 320px) and (max-width: 374px) {
 
 
+
+
             .hero {
                 background-image: url(http://corporatelandingcenter.test/storage/logo/happy-businessman-calling.jpg);
                 background-size: cover;
@@ -357,6 +359,13 @@
                 width: 100%;
                 box-sizing: border-box;
                 transform: translateX(-205px);
+            }
+            /* used */
+            .brand-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 23px;
             }
 
             .hero-container .hero-text h2 {
@@ -435,12 +444,13 @@
             .apply-now-btn {
                 background-color: #ffa500;
                 color: #1a1a1a;
-                padding: 6px 2px;
-                border-radius: 15px;
+                padding: 10px 8px;
+                border-radius: 21px;
+                font-size: 12px;
                 font-weight: bold;
                 text-decoration: none;
                 text-transform: uppercase;
-                letter-spacing: 1px;
+                letter-spacing: 0px;
                 transition: background-color 0.3s ease, transform 0.3s ease;
             }
 
@@ -639,10 +649,12 @@
                 box-sizing: border-box;
                 transform: translateX(-205px);
             }
+
             /* used */
             .hero-container .hero-text h2 {
                 font-size: 1.9rem;
             }
+
             /* used */
             .hero-container .hero-text h3 {
                 font-size: 1.1rem;
@@ -697,19 +709,20 @@
                 height: auto;
             }
 
-
-
+            /* used */
             .apply-now-btn {
                 background-color: #ffa500;
                 color: #1a1a1a;
-                padding: 6px 2px;
-                border-radius: 15px;
+                padding: 10px 8px;
+                border-radius: 21px;
+                font-size: 12px;
                 font-weight: bold;
                 text-decoration: none;
                 text-transform: uppercase;
-                letter-spacing: 1px;
+                letter-spacing: 0px;
                 transition: background-color 0.3s ease, transform 0.3s ease;
             }
+
 
             .card .row {
                 display: flex;
@@ -746,14 +759,25 @@
                 margin-bottom: 10px;
                 /* Add some space between rows */
             }
+
             /* used */
             .need-card {
                 height: 84vh;
             }
+
+            /* used */
+            .brand-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 50px;
+            }
+
             /* used */
             .custom-section {
                 height: 74ch;
             }
+
             /* used */
             .first-card {
                 height: 70vh;
@@ -814,6 +838,7 @@
                 width: 95%;
                 height: 221px;
             }
+
             /* used */
             .carousel-item .carousel-content {
                 height: 30ch;
