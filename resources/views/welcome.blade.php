@@ -360,6 +360,7 @@
                 box-sizing: border-box;
                 transform: translateX(-205px);
             }
+
             /* used */
             .brand-container {
                 display: flex;
@@ -660,20 +661,18 @@
                 font-size: 1.1rem;
             }
 
+            /* used */
             .btn-primary {
                 color: #fff;
                 background-color: #0d6efd;
                 border-color: #0d6efd;
-                padding: 0.2rem 0.4rem;
-                /* Very small padding */
+                padding: 0.2rem 0.8rem;
                 font-size: 0.75rem;
-                /* Smaller font size (12px) */
                 border-radius: 0.15rem;
-                /* Optional: Sharper edges for a smaller button */
             }
 
 
-
+            /*  */
             .apply-now-btn-2 {
                 background-color: #5e72e4;
                 color: white;
@@ -892,6 +891,54 @@
         }
 
         @media (min-width: 481px) and (max-width: 575px) {
+            .hero {
+                background-image: url(http://corporatelandingcenter.test/storage/logo/happy-businessman-calling.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 65vh;
+                background-color: #000;
+                background-blend-mode: screen;
+                position: relative;
+            }
+
+            .hero-text {
+                backdrop-filter: blur(12px);
+                background-color: rgba(0, 0, 0, 0.1);
+                color: whitesmoke;
+                text-align: center;
+                padding: 20px 15px;
+                border-radius: 20px;
+                margin-top: 285px;
+                height: 215px;
+                width: 100%;
+                box-sizing: border-box;
+                transform: translateX(-205px);
+            }
+
+            /* used */
+            .hero-container .hero-text h2 {
+                font-size: 1.9rem;
+            }
+
+            /* used */
+            .hero-container .hero-text h3 {
+                font-size: 1.1rem;
+            }
+
+            /* used */
+            .btn-primary {
+                color: #fff;
+                background-color: #0d6efd;
+                border-color: #0d6efd;
+                padding: 0.2rem 0.8rem;
+                font-size: 0.75rem;
+                border-radius: 0.15rem;
+            }
+
+
+            /*  */
             .apply-now-btn-2 {
                 background-color: #5e72e4;
                 color: white;
@@ -907,8 +954,19 @@
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
-                width: 100px;
-                height: 100px;
+                width: 65px;
+                height: 64px;
+            }
+
+
+            .we-understand-p {
+                margin-top: -16px;
+                font-size: 0.8rem;
+            }
+
+            .need-card .card-title {
+                font-size: 0.9rem;
+                margin-bottom: -2px;
             }
 
             .img-fluid {
@@ -916,40 +974,20 @@
                 height: auto;
             }
 
-            .hero-text {
-                backdrop-filter: blur(12px);
-                background-color: rgba(0, 0, 0, 0.1);
-                color: whitesmoke;
-                text-align: center;
-                padding: 20px 15px;
-                border-radius: 20px;
-                margin-top: 300px;
-                height: 335px;
-                width: 100%;
-                /* Full width */
-                box-sizing: border-box;
-                transform: translateX(-205px);
-                /* Moves the element 205px to the left */
-            }
-
-            .hero-container .hero-text h2 {
-                color: #fff;
-                font-size: 2.3rem;
-                font-weight: bold;
-                margin-bottom: 1rem;
-            }
-
+            /* used */
             .apply-now-btn {
-                background-color: #ffd700;
+                background-color: #ffa500;
                 color: #1a1a1a;
-                padding: 6px 2px;
-                border-radius: 15px;
+                padding: 10px 8px;
+                border-radius: 21px;
+                font-size: 12px;
                 font-weight: bold;
                 text-decoration: none;
                 text-transform: uppercase;
-                letter-spacing: 1px;
+                letter-spacing: 0px;
                 transition: background-color 0.3s ease, transform 0.3s ease;
             }
+
 
             .card .row {
                 display: flex;
@@ -966,10 +1004,9 @@
                 /* Adds spacing between the rows */
             }
 
+            /* used */
             .card .img-small {
-                width: 60%;
-                /* Ensures the image takes up the full width of its container */
-                height: auto;
+                width: 41%;
             }
 
             /* For images, reduce the width and adjust max-width */
@@ -988,41 +1025,40 @@
                 /* Add some space between rows */
             }
 
+            /* used */
             .need-card {
-                width: 100%;
-                height: 130vh;
-                background: rgba(241, 238, 238, 0.5);
-                padding-top: 30px;
+                height: 84vh;
             }
 
+            /* used */
+            .brand-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 50px;
+            }
+
+            /* used */
             .custom-section {
-                background-image: url(http://corporatelandingcenter.test/storage/logo/handshake.jpg);
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                padding: 30px 0;
-                height: 88ch;
+                height: 74ch;
             }
 
+            /* used */
             .first-card {
-                width: 100%;
-                /* Make the card take full width */
-                height: 85vh;
-                /* Let the card's height adjust based on content */
-                background: rgba(0, 0, 0, 0.4);
-                /* Optional: Adds a semi-transparent overlay for readability */
+                height: 70vh;
             }
 
             .carousel-item img {
-                margin-top: 25%;
-                width: 25%;
+                margin-top: 14%;
+                width: 23%;
                 margin-bottom: 54%;
             }
 
             .funding-specialist {
                 padding: 20px;
-                height: 25ch;
-                /* flex-direction: column; */
+                height: 12ch;
+                display: flex;
+                flex-direction: column;
             }
 
             .funding-specialist h1 {
@@ -1038,13 +1074,15 @@
                 /* Allow text to wrap to the next line */
             }
 
-            .last-section {
-                height: 85ch;
+            .funding-specialist .phone {
+                margin-right: 75px;
             }
 
-            .last-card {
-                height: 81vh;
+            .last-section {
+                height: 108ch;
             }
+
+
 
             .card-body {
                 display: flex;
@@ -1063,11 +1101,59 @@
 
             .hero-container .hero-text {
                 width: 95%;
+                height: 221px;
             }
 
+            /* used */
             .carousel-item .carousel-content {
-                height: 35ch;
+                height: 30ch;
             }
+
+
+
+            .card-title-white {
+                font-size: 1rem;
+                /* Adjust font size for readability */
+                line-height: 1.5;
+                /* Improve line height for better readability */
+                color: #ffffff;
+                /* Keep text white */
+            }
+
+            .card-body h3 {
+                font-size: 1.2rem;
+                /* Highlight headings with a larger size */
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+            }
+
+            .card-body h5 {
+                font-size: 0.9rem;
+                /* Slightly smaller for subheadings */
+                margin: 0.2rem 0;
+                /* Add spacing between subheading lines */
+            }
+
+            .before-footer {
+                flex-direction: column;
+            }
+
+            .col-md-3-div {
+                flex: 0 0 50%;
+                /* Take up 50% of the container width */
+                max-width: 100%;
+                /* Ensure the column doesn't exceed 50% width */
+                box-sizing: border-box;
+                /* Include padding and border in the width calculation */
+                padding: 5px;
+                /* Match Bootstrap's gutter spacing */
+                text-align: center
+            }
+
+            .last-card {
+                height: 106vh;
+            }
+
         }
 
         /* Small (sm) - min-width: 576px and max-width: 767px (small devices like tablets in portrait mode) */
