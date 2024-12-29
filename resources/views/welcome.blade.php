@@ -672,7 +672,7 @@
             }
 
 
-            /*  */
+            /* used */
             .apply-now-btn-2 {
                 background-color: #5e72e4;
                 color: white;
@@ -688,8 +688,8 @@
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
-                width: 65px;
-                height: 64px;
+                width: 80px;
+                height: 80px;
             }
 
 
@@ -704,7 +704,7 @@
             }
 
             .img-fluid {
-                max-width: 75%;
+                max-width: 275px;
                 height: auto;
             }
 
@@ -761,7 +761,7 @@
 
             /* used */
             .need-card {
-                height: 84vh;
+                height: 88vh;
             }
 
             /* used */
@@ -897,7 +897,7 @@
                 background-position: center;
                 background-repeat: no-repeat;
                 width: 100%;
-                height: 65vh;
+                height: 68vh;
                 background-color: #000;
                 background-blend-mode: screen;
                 position: relative;
@@ -919,22 +919,19 @@
 
             /* used */
             .hero-container .hero-text h2 {
-                font-size: 1.9rem;
+                font-size: 2.5rem;
             }
 
             /* used */
             .hero-container .hero-text h3 {
-                font-size: 1.1rem;
+                font-size: 1.5rem;
             }
 
             /* used */
             .btn-primary {
-                color: #fff;
-                background-color: #0d6efd;
-                border-color: #0d6efd;
-                padding: 0.2rem 0.8rem;
-                font-size: 0.75rem;
-                border-radius: 0.15rem;
+                padding: 0.5rem 1.7rem;
+                font-size: 0.80rem;
+                border-radius: 82.15rem;
             }
 
 
@@ -954,14 +951,14 @@
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
-                width: 65px;
-                height: 64px;
+                width: 95px;
+                height: 95px;
             }
 
 
             .we-understand-p {
                 margin-top: -16px;
-                font-size: 0.8rem;
+                font-size: 1rem;
             }
 
             .need-card .card-title {
@@ -978,7 +975,7 @@
             .apply-now-btn {
                 background-color: #ffa500;
                 color: #1a1a1a;
-                padding: 10px 8px;
+                padding: 12px 14px;
                 border-radius: 21px;
                 font-size: 12px;
                 font-weight: bold;
@@ -1027,15 +1024,12 @@
 
             /* used */
             .need-card {
-                height: 84vh;
+                height: 90vh;
             }
 
             /* used */
             .brand-container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-left: 50px;
+                margin-left: 95px;
             }
 
             /* used */
@@ -1050,8 +1044,8 @@
 
             .carousel-item img {
                 margin-top: 14%;
-                width: 23%;
-                margin-bottom: 54%;
+                width: 19%;
+                margin-bottom: 44%;
             }
 
             .funding-specialist {
@@ -1075,11 +1069,11 @@
             }
 
             .funding-specialist .phone {
-                margin-right: 75px;
+                margin-right: 120px;
             }
 
             .last-section {
-                height: 108ch;
+                height: 103ch;
             }
 
 
@@ -1101,7 +1095,7 @@
 
             .hero-container .hero-text {
                 width: 95%;
-                height: 221px;
+                height: 275px;
             }
 
             /* used */
@@ -1122,9 +1116,7 @@
 
             .card-body h3 {
                 font-size: 1.2rem;
-                /* Highlight headings with a larger size */
                 font-weight: bold;
-                margin-bottom: 0.5rem;
             }
 
             .card-body h5 {
@@ -1151,13 +1143,62 @@
             }
 
             .last-card {
-                height: 106vh;
+                height: 101vh;
+            }
+
+            .we-understand {
+                font-size: 1.9rem;
             }
 
         }
 
         /* Small (sm) - min-width: 576px and max-width: 767px (small devices like tablets in portrait mode) */
         @media (min-width: 576px) and (max-width: 767px) {
+            .hero {
+                background-image: url(http://corporatelandingcenter.test/storage/logo/happy-businessman-calling.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 68vh;
+                background-color: #000;
+                background-blend-mode: screen;
+                position: relative;
+            }
+
+            .hero-text {
+                backdrop-filter: blur(12px);
+                background-color: rgba(0, 0, 0, 0.1);
+                color: whitesmoke;
+                text-align: center;
+                padding: 20px 15px;
+                border-radius: 20px;
+                margin-top: 285px;
+                height: 215px;
+                width: 100%;
+                box-sizing: border-box;
+                transform: translateX(-205px);
+            }
+
+            /* used */
+            .hero-container .hero-text h2 {
+                font-size: 2.5rem;
+            }
+
+            /* used */
+            .hero-container .hero-text h3 {
+                font-size: 1.5rem;
+            }
+
+            /* used */
+            .btn-primary {
+                padding: 0.5rem 1.7rem;
+                font-size: 0.80rem;
+                border-radius: 82.15rem;
+            }
+
+
+            /*  */
             .apply-now-btn-2 {
                 background-color: #5e72e4;
                 color: white;
@@ -1173,8 +1214,19 @@
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
-                width: 120px;
-                height: 120px;
+                width: 105px;
+                height: 105px;
+            }
+
+
+            .we-understand-p {
+                margin-top: -16px;
+                font-size: 1rem;
+            }
+
+            .need-card .card-title {
+                font-size: 0.9rem;
+                margin-bottom: -2px;
             }
 
             .img-fluid {
@@ -1182,40 +1234,20 @@
                 height: auto;
             }
 
-            .hero-text {
-                backdrop-filter: blur(12px);
-                background-color: rgba(0, 0, 0, 0.1);
-                color: whitesmoke;
-                text-align: center;
-                padding: 20px 15px;
-                border-radius: 20px;
-                margin-top: 300px;
-                height: 335px;
-                width: 100%;
-                /* Full width */
-                box-sizing: border-box;
-                transform: translateX(-205px);
-                /* Moves the element 205px to the left */
-            }
-
-            .hero-container .hero-text h2 {
-                color: #fff;
-                font-size: 2.3rem;
-                font-weight: bold;
-                margin-bottom: 1rem;
-            }
-
+            /* used */
             .apply-now-btn {
-                background-color: #ffd700;
+                background-color: #ffa500;
                 color: #1a1a1a;
-                padding: 6px 2px;
-                border-radius: 15px;
+                padding: 12px 18px;
+                border-radius: 21px;
+                font-size: 12px;
                 font-weight: bold;
                 text-decoration: none;
                 text-transform: uppercase;
-                letter-spacing: 1px;
+                letter-spacing: 0px;
                 transition: background-color 0.3s ease, transform 0.3s ease;
             }
+
 
             .card .row {
                 display: flex;
@@ -1232,10 +1264,9 @@
                 /* Adds spacing between the rows */
             }
 
+            /* used */
             .card .img-small {
-                width: 60%;
-                /* Ensures the image takes up the full width of its container */
-                height: auto;
+                width: 41%;
             }
 
             /* For images, reduce the width and adjust max-width */
@@ -1254,41 +1285,37 @@
                 /* Add some space between rows */
             }
 
+            /* used */
             .need-card {
-                width: 100%;
-                height: 125vh;
-                background: rgba(241, 238, 238, 0.5);
-                padding-top: 30px;
+                height: 101vh;
             }
 
+            /* used */
+            .brand-container {
+                margin-left: 131px;
+            }
+
+            /* used */
             .custom-section {
-                background-image: url(http://corporatelandingcenter.test/storage/logo/handshake.jpg);
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                padding: 30px 0;
-                height: 88ch;
+                height: 74ch;
             }
 
+            /* used */
             .first-card {
-                width: 100%;
-                /* Make the card take full width */
-                height: 85vh;
-                /* Let the card's height adjust based on content */
-                background: rgba(0, 0, 0, 0.4);
-                /* Optional: Adds a semi-transparent overlay for readability */
+                height: 70vh;
             }
 
             .carousel-item img {
-                margin-top: 39%;
+                margin-top: 23%;
                 width: 19%;
-                margin-bottom: 54%;
+                margin-bottom: 44%;
             }
 
             .funding-specialist {
                 padding: 20px;
-                height: 25ch;
-                /* flex-direction: column; */
+                height: 12ch;
+                display: flex;
+                flex-direction: column;
             }
 
             .funding-specialist h1 {
@@ -1304,13 +1331,15 @@
                 /* Allow text to wrap to the next line */
             }
 
-            .last-section {
-                height: 85ch;
+            .funding-specialist .phone {
+                margin-right: 160px;
             }
 
-            .last-card {
-                height: 81vh;
+            .last-section {
+                height: 119ch;
             }
+
+
 
             .card-body {
                 display: flex;
@@ -1328,16 +1357,106 @@
             }
 
             .hero-container .hero-text {
-                width: 95%;
+                width: 100%;
+                height: 253px;
             }
 
+            /* used */
             .carousel-item .carousel-content {
-                height: 35ch;
+                height: 30ch;
             }
+
+
+
+            .card-title-white {
+                font-size: 1.2rem;
+                line-height: 1.5;
+                color: #ffffff;
+            }
+
+            .card-body h3 {
+                font-size: 1.7rem;
+                font-weight: bold;
+            }
+
+            .card-body h5 {
+                font-size: 1.2rem;
+                margin: 0.2rem 0;
+            }
+
+            .before-footer {
+                flex-direction: column;
+            }
+
+            .col-md-3-div {
+                flex: 0 0 50%;
+                /* Take up 50% of the container width */
+                max-width: 100%;
+                /* Ensure the column doesn't exceed 50% width */
+                box-sizing: border-box;
+                /* Include padding and border in the width calculation */
+                padding: 5px;
+                /* Match Bootstrap's gutter spacing */
+                text-align: center
+            }
+
+            .last-card {
+                height: 118vh;
+            }
+
+            .we-understand {
+                font-size: 1.9rem;
+            }
+
         }
 
         /* Medium (md) - min-width: 768px and max-width: 991px (tablets and small laptops) */
         @media (min-width: 768px) and (max-width: 991px) {
+            .hero {
+                background-image: url(http://corporatelandingcenter.test/storage/logo/happy-businessman-calling.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 68vh;
+                background-color: #000;
+                background-blend-mode: screen;
+                position: relative;
+            }
+
+            .hero-text {
+                backdrop-filter: blur(12px);
+                background-color: rgba(0, 0, 0, 0.1);
+                color: whitesmoke;
+                text-align: center;
+                padding: 20px 15px;
+                border-radius: 20px;
+                margin-top: 285px;
+                height: 215px;
+                width: 100%;
+                box-sizing: border-box;
+                transform: translateX(-205px);
+            }
+
+            /* used */
+            .hero-container .hero-text h2 {
+                font-size: 2.5rem;
+            }
+
+            /* used */
+            .hero-container .hero-text h3 {
+                font-size: 1.5rem;
+            }
+
+            /* used */
+            .btn-primary {
+                padding: 0.5rem 1.7rem;
+                font-size: 0.80rem;
+                border-radius: 82.15rem;
+            }
+
+
+            /*  */
             .apply-now-btn-2 {
                 background-color: #5e72e4;
                 color: white;
@@ -1353,8 +1472,19 @@
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
-                width: 150px;
-                height: 150px;
+                width: 105px;
+                height: 105px;
+            }
+
+
+            .we-understand-p {
+                margin-top: -16px;
+                font-size: 1rem;
+            }
+
+            .need-card .card-title {
+                font-size: 0.9rem;
+                margin-bottom: -2px;
             }
 
             .img-fluid {
@@ -1362,40 +1492,20 @@
                 height: auto;
             }
 
-            .hero-text {
-                backdrop-filter: blur(12px);
-                background-color: rgba(0, 0, 0, 0.1);
-                color: whitesmoke;
-                text-align: center;
-                padding: 20px 15px;
-                border-radius: 20px;
-                margin-top: 300px;
-                height: 335px;
-                width: 100%;
-                /* Full width */
-                box-sizing: border-box;
-                transform: translateX(-205px);
-                /* Moves the element 205px to the left */
-            }
-
-            .hero-container .hero-text h2 {
-                color: #fff;
-                font-size: 2.3rem;
-                font-weight: bold;
-                margin-bottom: 1rem;
-            }
-
+            /* used */
             .apply-now-btn {
                 background-color: #ffa500;
                 color: #1a1a1a;
-                padding: 6px 2px;
-                border-radius: 15px;
+                padding: 12px 18px;
+                border-radius: 21px;
+                font-size: 12px;
                 font-weight: bold;
                 text-decoration: none;
                 text-transform: uppercase;
-                letter-spacing: 1px;
+                letter-spacing: 0px;
                 transition: background-color 0.3s ease, transform 0.3s ease;
             }
+
 
             .card .row {
                 display: flex;
@@ -1412,10 +1522,9 @@
                 /* Adds spacing between the rows */
             }
 
+            /* used */
             .card .img-small {
-                width: 60%;
-                /* Ensures the image takes up the full width of its container */
-                height: auto;
+                width: 41%;
             }
 
             /* For images, reduce the width and adjust max-width */
@@ -1434,38 +1543,37 @@
                 /* Add some space between rows */
             }
 
+            /* used */
             .need-card {
-                width: 100%;
-                height: 125vh;
-                background: rgba(241, 238, 238, 0.5);
-                padding-top: 30px;
+                height: 101vh;
             }
 
+            /* used */
+            .brand-container {
+                margin-left: 131px;
+            }
+
+            /* used */
             .custom-section {
-                background-image: url(http://corporatelandingcenter.test/storage/logo/handshake.jpg);
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                padding: 30px 0;
-                height: 72ch;
+                height: 74ch;
             }
 
+            /* used */
             .first-card {
-                width: 100%;
-                height: 69vh;
-                background: rgba(0, 0, 0, 0.4);
+                height: 70vh;
             }
 
             .carousel-item img {
-                margin-top: 39%;
+                margin-top: 23%;
                 width: 19%;
-                margin-bottom: 54%;
+                margin-bottom: 44%;
             }
 
             .funding-specialist {
                 padding: 20px;
-                height: 25ch;
-                /* flex-direction: column; */
+                height: 12ch;
+                display: flex;
+                flex-direction: column;
             }
 
             .funding-specialist h1 {
@@ -1481,13 +1589,15 @@
                 /* Allow text to wrap to the next line */
             }
 
-            .last-section {
-                height: 81ch;
+            .funding-specialist .phone {
+                margin-right: 160px;
             }
 
-            .last-card {
-                height: 77vh;
+            .last-section {
+                height: 119ch;
             }
+
+
 
             .card-body {
                 display: flex;
@@ -1505,11 +1615,55 @@
             }
 
             .hero-container .hero-text {
-                width: 95%;
+                width: 100%;
+                height: 253px;
             }
 
+            /* used */
             .carousel-item .carousel-content {
-                height: 35ch;
+                height: 30ch;
+            }
+
+
+
+            .card-title-white {
+                font-size: 1.2rem;
+                line-height: 1.5;
+                color: #ffffff;
+            }
+
+            .card-body h3 {
+                font-size: 1.7rem;
+                font-weight: bold;
+            }
+
+            .card-body h5 {
+                font-size: 1.2rem;
+                margin: 0.2rem 0;
+            }
+
+            .before-footer {
+                flex-direction: column;
+            }
+
+            .col-md-3-div {
+                flex: 0 0 50%;
+                /* Take up 50% of the container width */
+                max-width: 100%;
+                /* Ensure the column doesn't exceed 50% width */
+                box-sizing: border-box;
+                /* Include padding and border in the width calculation */
+                padding: 5px;
+                /* Match Bootstrap's gutter spacing */
+                text-align: center
+            }
+
+            .last-card {
+                height: 118vh;
+            }
+
+            .we-understand {
+                font-size: 1.9rem;
             }
         }
 
