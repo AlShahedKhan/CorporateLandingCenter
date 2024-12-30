@@ -1440,12 +1440,12 @@
 
             /* used */
             .hero-container .hero-text h2 {
-                font-size: 2.5rem;
+                font-size: 3rem;
             }
 
             /* used */
             .hero-container .hero-text h3 {
-                font-size: 1.5rem;
+                font-size: 1.6rem;
             }
 
             /* used */
@@ -1472,14 +1472,14 @@
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
-                width: 105px;
-                height: 105px;
+                width: 137px;
+                height: 137px;
             }
 
 
             .we-understand-p {
                 margin-top: -16px;
-                font-size: 1rem;
+                font-size: 1.3rem;
             }
 
             .need-card .card-title {
@@ -1496,7 +1496,7 @@
             .apply-now-btn {
                 background-color: #ffa500;
                 color: #1a1a1a;
-                padding: 12px 18px;
+                padding: 12px 22px;
                 border-radius: 21px;
                 font-size: 12px;
                 font-weight: bold;
@@ -1524,7 +1524,7 @@
 
             /* used */
             .card .img-small {
-                width: 41%;
+                width: 37%;
             }
 
             /* For images, reduce the width and adjust max-width */
@@ -1545,12 +1545,13 @@
 
             /* used */
             .need-card {
-                height: 101vh;
+                height: 104vh;
+                width: 90% !important;
             }
 
             /* used */
             .brand-container {
-                margin-left: 131px;
+                margin-left: 224px;
             }
 
             /* used */
@@ -1560,13 +1561,13 @@
 
             /* used */
             .first-card {
-                height: 70vh;
+                height: 71vh;
             }
 
             .carousel-item img {
                 margin-top: 23%;
-                width: 19%;
-                margin-bottom: 44%;
+                width: 15%;
+                margin-bottom: 39%;
             }
 
             .funding-specialist {
@@ -1577,16 +1578,11 @@
             }
 
             .funding-specialist h1 {
-                font-size: 18px;
-                /* Adjust font size for smaller screens */
+                font-size: 20px;
                 margin: 5px 0;
-                /* Add margin between lines */
                 width: 100%;
-                /* Ensure h1 elements take the full width */
                 text-align: center;
-                /* Center text inside each h1 */
                 white-space: normal;
-                /* Allow text to wrap to the next line */
             }
 
             .funding-specialist .phone {
@@ -1616,7 +1612,7 @@
 
             .hero-container .hero-text {
                 width: 100%;
-                height: 253px;
+                height: 260px;
             }
 
             /* used */
@@ -1663,7 +1659,7 @@
             }
 
             .we-understand {
-                font-size: 1.9rem;
+                font-size: 2.5rem;
             }
         }
 
