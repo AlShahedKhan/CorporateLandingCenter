@@ -1472,8 +1472,8 @@
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
-                width: 105px;
-                height: 105px;
+                width: 137px;
+                height: 137px;
             }
 
 
