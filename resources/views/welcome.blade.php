@@ -1578,16 +1578,11 @@
             }
 
             .funding-specialist h1 {
-                font-size: 18px;
-                /* Adjust font size for smaller screens */
+                font-size: 20px;
                 margin: 5px 0;
-                /* Add margin between lines */
                 width: 100%;
-                /* Ensure h1 elements take the full width */
                 text-align: center;
-                /* Center text inside each h1 */
                 white-space: normal;
-                /* Allow text to wrap to the next line */
             }
 
             .funding-specialist .phone {
