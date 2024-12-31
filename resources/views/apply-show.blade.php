@@ -161,6 +161,7 @@
                         <img src="{{ asset('storage/' . $applyNow->owner_signature) }}" alt="Owner Signature"
                             width="150" class="signature-image">
                     </p>
+                    <p><strong>Owner Signature Date:</strong> {{ $applyNow->owner_signature_date }}</p>
                     <p><strong>Partner Signature:</strong>
                         @if ($applyNow->partner_signature)
                             <img src="{{ asset('storage/' . $applyNow->partner_signature) }}" alt="Partner Signature"
@@ -169,6 +170,7 @@
                             No signature available
                         @endif
                     </p>
+                    <p><strong>Partner Signature Date:</strong> {{ $applyNow->partner_signature_date }}</p>
                 </div>
             </div>
 

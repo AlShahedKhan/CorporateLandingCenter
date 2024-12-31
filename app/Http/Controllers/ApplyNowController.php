@@ -12,14 +12,6 @@ use Illuminate\Support\Facades\Storage;
 
 class ApplyNowController extends Controller
 {
-    // public function index()
-    // {
-    //     $applyNows = ApplyNow::all();
-    //     return view('apply', [
-    //         'applyNows' => $applyNows
-    //     ]);
-    // }
-
     public function index(Request $request)
     {
         $applyNows = ApplyNow::all();
@@ -59,7 +51,6 @@ class ApplyNowController extends Controller
         ]);
     }
 
-
     public function create()
     {
         return view('apply-now');
@@ -67,11 +58,7 @@ class ApplyNowController extends Controller
 
     // Store the form data
     public function store(Request $request)
-    // public function store(ApplyNowRequest $request)
     {
-        // dd($request->all());
-        // Log::info($request->all());
-
         $fields = $request->validate([
             'company_name' => 'required|string|max:255',
             'dba' => 'string|max:255',
@@ -127,7 +114,7 @@ class ApplyNowController extends Controller
             'landlord_phone' => 'nullable|phone',
 
             'owner_signature' => 'required|string', // For signature (store base64 or file path)
-            'owner_signature_date' => 'required|date',
+            'owner_signature_date' => 'nullable|date',
 
             'partner_signature' => 'nullable|string', // For signature (store base64 or file path)
             'partner_signature_date' => 'nullable|date',
@@ -135,9 +122,6 @@ class ApplyNowController extends Controller
             'uploaded_bank_statements' => 'nullable|array',
             'uploaded_bank_statements.*' => 'file|mimes:pdf,jpeg,jpg,png|max:2048',
         ]);
-        // Log::info($fields);
-
-        // dd($fields);
 
         // Handle file uploads for bank statements
         $filePaths = [];
@@ -156,6 +140,9 @@ class ApplyNowController extends Controller
             $imageData = explode(',', $ownerSignatureData)[1]; // Get base64 part
             $ownerSignaturePath = 'signatures/' . uniqid('owner_') . '.png';
             Storage::disk('public')->put($ownerSignaturePath, base64_decode($imageData));
+
+            // Set the owner_signature_date to the current date
+            $fields['owner_signature_date'] = now();
         }
 
         // Handle base64 encoded signature for the partner (if provided)
@@ -165,6 +152,9 @@ class ApplyNowController extends Controller
             $imageData = explode(',', $partnerSignatureData)[1]; // Get base64 part
             $partnerSignaturePath = 'signatures/' . uniqid('partner_') . '.png';
             Storage::disk('public')->put($partnerSignaturePath, base64_decode($imageData));
+
+            // Set the partner_signature_date to the current date
+            $fields['partner_signature_date'] = now();
         }
 
         // Create the business application record in the database
@@ -213,14 +203,13 @@ class ApplyNowController extends Controller
             'landlord_name' => $request->landlord_name,
             'landlord_phone' => $request->landlord_phone,
             'owner_signature' => $ownerSignaturePath,
-            'owner_signature_date' => $request->owner_signature_date,
+            'owner_signature_date' => $fields['owner_signature_date'],
             'partner_signature' => $partnerSignaturePath,
-            'partner_signature_date' => $request->partner_signature_date,
+            'partner_signature_date' => $fields['partner_signature_date'],
             'uploaded_bank_statements' => !empty($filePaths) ? json_encode($filePaths) : null,
         ]);
 
         Mail::to('alshahed.cse@gmail.com')->send(new BusinessApplicationMail($applyNow));
-
 
         return back()->with('success', 'Your application has been sent!');
     }

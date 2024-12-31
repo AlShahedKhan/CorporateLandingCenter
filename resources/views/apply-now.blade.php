@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="/resources/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{asset('/')}}website/assets/css/style2.css">
-    <link rel="stylesheet" href="{{asset('/')}}website/assets/css/style.css">
+    <link rel="stylesheet" href="{{ asset('/') }}website/assets/css/style2.css">
+    <link rel="stylesheet" href="{{ asset('/') }}website/assets/css/style.css">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
@@ -49,37 +49,19 @@
             <!-- Brand Logo -->
             <a class="navbar-brand" href="{{ url('/') }}">
                 <div class="brand-container">
-                    {{-- <img src="{{ asset('storage/logo/logo.jpg') }}" alt="Brand Logo"> --}}
-                    {{-- <img src="{{ asset('storage/logo/logo-removebg-preview.png') }}" alt="Brand Logo"> --}}
                     <img src="{{ asset('storage/logo/logo.png') }}" alt="Brand Logo">
-                    <!-- Logo Path from Laravel Storage -->
                 </div>
             </a>
 
             <!-- Hamburger Menu for Mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <!-- Navbar Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    {{-- <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ url('/') }}">Home</a>
-                    </li> --}}
-                    {{-- <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li> --}}
                 </ul>
             </div>
         </div>
@@ -633,11 +615,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 disabled">
                             <label for="ownerSignatureDate" class="form-label">Date <span>*</span></label>
                             <input type="date" name="owner_signature_date"
                                 value="{{ old('owner_signature_date') }}" class="form-control"
-                                id="ownerSignatureDate" required>
+                                id="ownerSignatureDate" required disabled>
                         </div>
                         @error('owner_signature_date')
                             <div class="text-danger">{{ $message }}</div>
@@ -662,12 +644,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                                                <div class="col-md-6 disabled">
                             <label for="partnerSignatureDate" class="form-label">Date</label>
                             <input type="date" name="partner_signature_date"
                                 value="{{ old('partner_signature_date') }}" class="form-control"
-                                id="partnerSignatureDate">
+                                id="partnerSignatureDate" disabled>
                         </div>
+
+
                         @error('partner_signature_date')
                             <div class="text-danger">{{ $message }}</div>
                         @enderror
@@ -692,6 +676,21 @@
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var ownerDateInput = document.getElementById('ownerSignatureDate');
+            if (!ownerDateInput.value) {
+                var today = new Date().toISOString().split('T')[0];
+                ownerDateInput.value = today;
+            }
+
+            var partnerDateInput = document.getElementById('partnerSignatureDate');
+            if (!partnerDateInput.value) {
+                var today = new Date().toISOString().split('T')[0];
+                partnerDateInput.value = today;
+            }
+        });
+    </script>
 </body>
 
 </html>
