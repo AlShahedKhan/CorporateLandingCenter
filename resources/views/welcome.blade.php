@@ -774,7 +774,7 @@
 
             /* used */
             .custom-section {
-                height: 74ch;
+                height: 71ch;
             }
 
             /* used */
@@ -813,7 +813,7 @@
             }
 
             .last-section {
-                height: 108ch;
+                height: 106ch;
             }
 
 
@@ -885,7 +885,7 @@
             }
 
             .last-card {
-                height: 106vh;
+                height: 108vh;
             }
 
         }
@@ -1545,7 +1545,7 @@
 
             /* used */
             .need-card {
-                height: 104vh;
+                height: 88vh;
                 width: 90% !important;
             }
 
@@ -1561,12 +1561,12 @@
 
             /* used */
             .first-card {
-                height: 71vh;
+                height: 57vh;
             }
 
             .carousel-item img {
-                margin-top: 23%;
-                width: 15%;
+                margin-top: 25%;
+                width: 12%;
                 margin-bottom: 39%;
             }
 
@@ -1611,8 +1611,9 @@
             }
 
             .hero-container .hero-text {
-                width: 100%;
+                width: 95%;
                 height: 260px;
+                margin-top: 388px;
             }
 
             /* used */
@@ -1655,7 +1656,7 @@
             }
 
             .last-card {
-                height: 118vh;
+                height: 94vh;
             }
 
             .we-understand {
@@ -1673,17 +1674,15 @@
                 padding: 20px 15px;
                 border-radius: 20px;
                 margin-top: 300px;
-                height: 335px;
+                height: 301px;
                 width: 100%;
-                /* Full width */
                 box-sizing: border-box;
                 transform: translateX(-205px);
-                /* Moves the element 205px to the left */
             }
 
 
             .hero-container .hero-text {
-                width: 100%;
+                width: 57%;
             }
 
             .img-fluid {
@@ -1695,6 +1694,107 @@
                 width: 210px;
                 height: 210px;
             }
+
+            .we-understand {
+                font-size: 2.9rem;
+            }
+
+            .we-understand-p {
+                font-size: 1.5rem;
+                margin-top: -21px;
+            }
+
+            .need-card {
+                height: 59vh;
+                background: rgba(241, 238, 238, 0.5);
+                padding-top: 30px;
+            }
+
+            .img-small {
+                width: 55%;
+                max-width: 150px;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .card-title {
+                font-size: 1.1rem !important;
+            }
+
+            .carousel-item img {
+                margin-top: 4%;
+                width: 10%;
+                margin-bottom: 14%;
+            }
+
+            .funding-specialist h1 {
+                font-size: 28px;
+            }
+
+            .custom-section {
+                background-image: url(http://corporatelandingcenter.test/storage/logo/handshake.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                padding: 30px 0;
+                height: 45vh;
+            }
+
+            .first-card {
+                width: 100%;
+                height: 39vh;
+                background: rgba(0, 0, 0, 0.4);
+            }
+
+            .last-section {
+                height: 52ch;
+            }
+
+            /* footer section */
+            .before-footer {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: -46px;
+            }
+
+            .col-md-3-div:first-child {
+                flex: 0 0 100%;
+                /* Full width for the first column */
+                max-width: 100%;
+                margin-bottom: -40px;
+            }
+
+            .col-md-3-div:not(:first-child) {
+                flex: 0 0 100%;
+                /* Full width for the remaining */
+                display: contents. padding: 0px;
+                max-width: 33%;
+            }
+
+            .last-card {
+                width: 100%;
+                height: 48vh;
+                background: rgba(0, 0, 0, 0.5);
+                align-items: center;
+            }
+
+            .card-title-white {
+                color: white;
+                font-size: 1.3rem;
+                text-align: center
+            }
+
+            .services {
+                font-size: 1.5rem
+            }
+
+            .col-md-12 {
+                flex: 0 0 auto;
+                width: 100%;
+                margin-top: -23px;
+            }
+
         }
     </style>
 </head>
@@ -2053,29 +2153,29 @@
                             </div>
                         </div>
                         <div class="col-md-3-div">
-                            <div class="card-body text-left">
-                                <h3 class="card-title-white">Services</h3>
-                                <h5 class="card-title-white">Personal Funding</h5>
-                                <h5 class="card-title-white">Cash Advance</h5>
-                                <h5 class="card-title-white">Lines of credit</h5>
-                                <h5 class="card-title-white">Term Loans</h5>
+                            <div class="card-body text-left ">
+                                <h3 class="card-title-white services">Services</h3>
+                                <h5 class="card-title-white h5">Personal Funding</h5>
+                                <h5 class="card-title-white h5">Cash Advance</h5>
+                                <h5 class="card-title-white h5">Lines of credit</h5>
+                                <h5 class="card-title-white h5">Term Loans</h5>
                             </div>
                         </div>
                         <div class="col-md-3-div">
                             <div class="card-body text-left">
-                                <h3 class="card-title-white">Corporate Landing Center</h3>
-                                <h5 class="card-title-white">510 340-9000</h5>
-                                <h5 class="card-title-white">510 660-8002</h5>
-                                <h5 class="card-title-white">eroger510@aol.com</h5>
-                                <h5 class="card-title-white">www.corpLanding.net</h5>
+                                <h3 class="card-title-white services">Corporate Landing Center</h3>
+                                <h5 class="card-title-white h5">510 340-9000</h5>
+                                <h5 class="card-title-white h5">510 660-8002</h5>
+                                <h5 class="card-title-white h5">eroger510@aol.com</h5>
+                                <h5 class="card-title-white h5">www.corpLanding.net</h5>
                             </div>
                         </div>
                         <div class="col-md-3-div">
                             <div class="card-body text-left">
-                                <h3 class="card-title-white">Open Hours</h3>
-                                <h5 class="card-title-white">Monday - Friday: 09:00 am - 8:00 pm</h5>
-                                <h5 class="card-title-white">Saturday: Set by Appointment</h5>
-                                <h5 class="card-title-white">Sunday: Closed</h5>
+                                <h3 class="card-title-white services">Open Hours</h3>
+                                <h5 class="card-title-white h5">Monday - Friday: 09:00 am - 8:00 pm</h5>
+                                <h5 class="card-title-white h5">Saturday: Set by Appointment</h5>
+                                <h5 class="card-title-white h5">Sunday: Closed</h5>
                             </div>
                         </div>
                     </div>
