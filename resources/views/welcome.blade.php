@@ -9,6 +9,7 @@
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('/') }}website/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Custom Styling for Navbar */
         body {
@@ -183,15 +184,13 @@
             /* Prevent repeating the image */
             padding: 30px 0;
             /* Add padding to the section to give it some space */
+            height: 42vh;
         }
 
         .last-card {
             width: 100%;
-            /* Make the card take full width */
-            height: 36vh;
-            /* Let the card's height adjust based on content */
+            height: 37vh;
             background: rgba(0, 0, 0, 0.5);
-            /* Optional: Adds a semi-transparent overlay for readability */
             align-items: center;
         }
 
@@ -213,6 +212,7 @@
 
         .border-top {
             border-top: 2px solid #ccc;
+            margin-bottom: -1px !important;
             /* Change the color and thickness */
         }
 
@@ -315,6 +315,7 @@
         .before-footer {
             display: flex;
             flex-direction: row;
+            margin-bottom: -20px;
         }
 
         .col-md-3-div {
@@ -618,7 +619,7 @@
             }
 
             .last-card {
-                height: 106vh;
+                height: 107vh;
             }
 
 
@@ -885,7 +886,7 @@
             }
 
             .last-card {
-                height: 108vh;
+                height: 109vh;
             }
 
         }
@@ -2168,6 +2169,23 @@
                                 <h5 class="card-title-white h5">510 660-8002</h5>
                                 <h5 class="card-title-white h5">eroger510@aol.com</h5>
                                 <h5 class="card-title-white h5">www.corpLanding.net</h5>
+                                <!-- Social Media Links -->
+                                <div class="row justify-content-center mt-4">
+                                    <div class="col-md-12 ">
+                                        <a href="https://www.facebook.com" target="_blank" class="me-3">
+                                            <i class="fab fa-facebook-f" style="font-size: 30px; color: white;"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com" target="_blank" class="me-3">
+                                            <i class="fab fa-instagram" style="font-size: 30px; color: white;"></i>
+                                        </a>
+                                        <a href="https://www.twitter.com" target="_blank" class="me-3">
+                                            <i class="fab fa-twitter" style="font-size: 30px; color: white;"></i>
+                                        </a>
+                                        <a href="https://www.tiktok.com" target="_blank" class="me-3">
+                                            <i class="fab fa-tiktok" style="font-size: 30px; color: white;"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-3-div">
@@ -2196,15 +2214,10 @@
                             </div>
                         </div>
                     </footer>
-
-
                 </div>
             </div>
         </div>
     </section>
-
-
-
 
     <!-- Bootstrap 5 JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
